@@ -1,0 +1,14 @@
+{% extends "access_base.html" %}
+{% block title%}Login{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <h1>Access Token</h1>
+    <input id="token" name="token" type="password" autofocus>
+    <br>
+    <span class="error">{{ error }}</span>
+    <br>
+    <br>
+    <input class="button" type="submit" value="Submit">
+</form>
+{% endblock %}
