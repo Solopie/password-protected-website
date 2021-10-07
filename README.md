@@ -4,6 +4,7 @@ Template repository to create websites that required a password to access. You m
 
 Built with:
 
+- Python 3
 - Flask
 - SQLite
 
@@ -23,5 +24,25 @@ Check out ".env.sample" file
 - Description: Path of the database file
 
 ## Deployment
+
+### Manual
+
+*Should only be used for testing*
+
+Install dependencies 
+
+    pip install -r requirements.txt
+
+Ensure you initialise your SQLite database using the `init.sql` script before running app
+
+    sqlite3 access.db < init.sql
+
+Run `main.py`
+
+    python main.py
+
+Application will be running on port 8000 (or whatever port you have specified in `main.py`)
+
+### Docker
 
 *Docker file coming soon!*
